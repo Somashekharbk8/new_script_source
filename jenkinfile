@@ -1,0 +1,34 @@
+pipeline {
+	agent
+	stages { 
+		stage ('build') {
+				stage (build1) {
+						
+					steps {
+					        sh 'ifconfig'
+						sh 'ls -lrt'
+					}
+				}
+				
+				stage ('build2') {
+						steps {
+							sh 'echo this is my first build'
+							sh 'ls'
+							}
+						}
+					}
+				}
+			
+		stage ('test') {
+				steps {
+					sh ' echo print this message'
+					sh ' du -h'
+					}
+				}
+		stage('DEPLOY') {
+				steps {
+					sh 'top'
+					}
+				}
+			}
+		}
