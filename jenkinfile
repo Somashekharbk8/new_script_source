@@ -7,29 +7,11 @@ pipeline {
 					steps {
 					        sh 'ifconfig'
 						sh 'ls -lrt'
+						sh 'ls'
+						sh 'du -h'
 					}
 				}
 				
-				stage ('build2') {
-						steps {
-							sh 'echo this is my first build'
-							sh 'ls'
-							}
-						}
-					}
-				}
-			
-		stage ('test') {
-				steps {
-					sh ' echo print this message'
-					sh ' du -h'
-					}
-				}
-		stage('DEPLOY') {
-				steps {
-					sh 'top'
-					}
-				}
 			}
 		}
 	}
