@@ -4,9 +4,6 @@ stages {
   stage(Build) {
     steps {
 
-
-#!/bin/bash
-
 num=$1
 
 fact=1
