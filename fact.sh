@@ -1,3 +1,9 @@
+pipeline {
+agent any
+stages {
+  stage(Build) {
+    steps {
+
 
 #!/bin/bash
 
@@ -14,3 +20,7 @@ num=`expr $num - 1`
 done
 echo "$fact"
 
+	}
+     }
+   }
+}
