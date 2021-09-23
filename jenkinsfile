@@ -4,12 +4,9 @@ pipeline {
 	stages { 
 		stage ('build') {					
 				steps {
-					        sh 'ifconfig'
-						sh 'ls -lrt'
-						sh 'ls'
-						sh 'du -h'
+					 sh 'echo world'
 					}
 				}
 				
-			}
 		}
+	}
